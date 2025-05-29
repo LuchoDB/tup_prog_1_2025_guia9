@@ -22,12 +22,12 @@ namespace Ejercicio2_Recursividad
         static void ImprimirPrimos(int n, int m)
         {
             if (n > m)
-                return;
-            if (EsPrimo(n))
+                return; // Caso base: si n es mayor que m, terminamos la recursión
+            if (EsPrimo(n)) // Verificamos si n es primo
             {
                 Console.Write(n + " ");
             }
-            ImprimirPrimos(n + 1, m);
+            ImprimirPrimos(n + 1, m); // Llamada recursiva con el siguiente númerogit
         }
         static void Main(string[] args)
         {
